@@ -1,0 +1,28 @@
+Job Title: Junior AI/ML Engineer
+
+Location: Dublin, Ireland (Hybrid)
+
+Company Overview:
+TechNova is an AI-first product company that builds scalable machine learning solutions for real-time personalization, analytics, and automation.
+
+Role Summary:
+We are seeking a highly motivated Junior AI/ML Engineer to join our growing data science team. You will work on developing AI-powered systems, integrating NLP tools, and deploying machine learning models.
+
+Responsibilities:
+- Collaborate with senior engineers to build and optimize ML pipelines
+- Extract insights from large datasets using Python and Pandas
+- Develop APIs using Flask or FastAPI to serve models
+- Integrate NLP features (e.g., sentiment analysis, entity recognition)
+- Work closely with DevOps to deploy models using Docker or cloud platforms
+
+Requirements:
+- Bachelor's or Master's degree in Computer Science, Data Science, or related field
+- Strong Python skills (especially with Pandas, NumPy, Scikit-learn)
+- Familiarity with Hugging Face Transformers or similar tools
+- Experience building REST APIs (Flask or FastAPI)
+- Good understanding of version control (Git) and basic Linux commands
+
+Bonus:
+- Knowledge of cloud platforms (AWS, GCP, or Azure)
+- Interest in recommender systems or time series models
+
