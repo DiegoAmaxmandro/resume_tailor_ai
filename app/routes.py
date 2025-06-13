@@ -2,7 +2,9 @@ from flask import Blueprint
 from app.resume_parser import  extract_text_from_pdf
 from app.job_parser import extract_text_from_txt
 from app.matcher import match_score
+from app.ai_rewriter import suggest_resume_improvements
 import os
+
 
 main = Blueprint('main', __name__)
 
@@ -36,4 +38,14 @@ def match_result():
     return f"<h2> Match Score: {score}%</h2><p>Matching Keywords: {', '.join(matches)}</p>"
 
 
+@main.route('/suggestions')
+def get_suggestions():
+    resume_path = os.path.join('data', "sample_cv.pdf")
+    job_path = os.path.join('data', 'sample_job.txt')
 
+    resume_text = extract_text_from_pdf(resume_path)
+    job_text = extract_text_from_txt(job_path)
+
+    suggestions = suggest_resume_improvements(resume_text, job_text)
+
+    return f'<h2> Suggestions to Improve Your Resume</h2><p>{suggestions.replace('\n', '<br>')}</p>'

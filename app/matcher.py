@@ -9,7 +9,7 @@ def clean_text(text):
 
 def extract_keywords(text, top_n=20):
     text = clean_text(text)
-    vectorizer = CountVectorizer(stop_words ='english', max_features = top_n)
+    vectorizer = CountVectorizer(stop_words ='english', max_features = top_n, ngram_range=(1, 2))
     X = vectorizer.fit_transform([text])
     return set(vectorizer.get_feature_names_out())
 
