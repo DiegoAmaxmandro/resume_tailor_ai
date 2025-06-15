@@ -1,7 +1,8 @@
 from transformers import pipeline, AutoTokenizer
 
 # Loading the model
-model_name = "google/flan-t5-large"
+model_name = "google/flan-t5-base"
+
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 generator = pipeline("text2text-generation", model=model_name, tokenizer=tokenizer, device="mps")
 

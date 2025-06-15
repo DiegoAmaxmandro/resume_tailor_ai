@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Tailor AI</title>
+</head>
+<body>
+    <h2>Upload Your Resume and Job Description</h2>
+    <form action="/results" method="post" enctype="multipart/form-data">
+        <label>Resume (PDF):</label><br>
+        <input type="file" name="resume" accept=".pdf" required><br><br>
+
+        <label> Job Description (.txt):</label><br>
+        <input type="file" name="job" accept=".txt" required><br><br>
+
+        <input type="submit" value="Analyse">
+
+    </form>
+</body>
+</html>
